@@ -1,0 +1,39 @@
+.page {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 0.5rem 0 3rem;
+  flex: 1;
+}
+
+.grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.35rem;
+}
+
+.footer {
+  padding: 1.25rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--ink-muted);
+  border-top: 1px solid rgba(151, 206, 76, 0.18);
+}
+
+@media (max-width: 640px) {
+  .main {
+    width: min(100% - 1.25rem, 1120px);
+  }
+
+  .grade {
+    grid-template-columns: 1fr;
+    gap: 1.1rem;
+  }
+}

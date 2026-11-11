@@ -1,0 +1,53 @@
+:root {
+  --portal: #97ce4c;
+  --portal-deep: #5ea31a;
+  --space: #071411;
+  --space-mid: #12352e;
+  --ink: #f3f7f1;
+  --ink-soft: #d7e6d2;
+  --ink-muted: #9bb5a8;
+  --font-display: var(--font-bangers), "Bangers", cursive;
+  --font-body: var(--font-manrope), "Manrope", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 18% 12%, rgba(151, 206, 76, 0.22), transparent 34%),
+    radial-gradient(circle at 82% 8%, rgba(64, 196, 180, 0.16), transparent 28%),
+    radial-gradient(circle at 50% 100%, rgba(30, 90, 70, 0.35), transparent 42%),
+    linear-gradient(160deg, #0a1c18 0%, #071411 45%, #0d2620 100%);
+  background-attachment: fixed;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.35;
+  background-image:
+    radial-gradient(rgba(243, 247, 241, 0.35) 0.6px, transparent 0.7px);
+  background-size: 3px 3px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.55), transparent 70%);
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
