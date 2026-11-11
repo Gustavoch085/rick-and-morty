@@ -14,8 +14,7 @@ const manrope = Manrope({
 
 export const metadata = {
   title: "Catálogo Rick and Morty",
-  description:
-    "Atividade Next.js com componentes reutilizáveis e dados estáticos",
+  description: "Catálogo com 10 personagens de Rick and Morty",
 };
 
 export default function RootLayout({ children }) {

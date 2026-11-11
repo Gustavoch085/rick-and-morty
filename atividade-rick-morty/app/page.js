@@ -8,7 +8,7 @@ export default function Home() {
     <div className={styles.page}>
       <Header
         titulo="Catálogo de Personagens"
-        subtitulo="Dez personagens com componentes reutilizáveis, props e CSS Modules."
+        subtitulo="Conheça Rick, Morty, Summer e outros moradores do multiverso."
       />
 
       <main className={styles.main}>
@@ -27,7 +27,7 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        Atividade React + Next.js · Dados estáticos
+        Catálogo Rick and Morty
       </footer>
     </div>
   );
